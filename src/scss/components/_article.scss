@@ -1,4 +1,64 @@
+@use '../base/typography';
+@use '../base/_layout';
 
-.content {
-background: var(--gradient-26);
+*{
+box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+//.content{
+//background: var(--gradient-26);     
+
+.columns {
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 40ch auto;
+    gap: 5rem;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+ 
+
+
+      &__poem { 
+            font-family:"Open Sans Condensed Light" ;
+            position: relative;
+            margin: -3rem 0 2rem 1rem;
+            padding: auto rem;    
+
+            font-variation-settings: 'wght' 68;
+            font-size: var(--font-size-10);
+           
+            line-height: var(--font-lineheight-2);}
+    
+      
+    
+     
+           &__img { 
+             box-sizing: border-box;
+             width: 100%;
+             height: auto;
+             max-width: max-content;
+             margin: 0 auto;
+            padding: 0rem;
+        
+            display: block;
+           
+
+      }
+    
+   // typography
+              
+    }
+
+   /* @media (max-width: 650px) {
+        body {
+          display: block;
+          font-size: 80%;
+        }
+      */
+        //
+        
+   
+     // }
